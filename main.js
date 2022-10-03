@@ -27,9 +27,11 @@ function changeAll()
   myImg2.style.width = "0"
 
   myInput = document.getElementById("myInput")
+  myInput1 = document.getElementById("myInput1")
+  myInput.remove();
+  myInput1.remove();
 
   myInput.style.fontSize = "0"
-    
 }
 function changeIt()
 {
@@ -58,7 +60,10 @@ function changeIt()
   myImg2.style.height = "0"
   myImg2.style.width = "0"
 
-  myInput = document.getElementById("myInput1")
+  myInput1 = document.getElementById("myInput1")
+  myInput = document.getElementById("myInput")
+  myInput.remove();
+  myInput1.remove();
 
   myInput.style.fontSize = "0"
 }
