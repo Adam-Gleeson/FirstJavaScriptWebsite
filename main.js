@@ -61,7 +61,7 @@ function changeIt()
   myImg2.style.width = "0"
 
   myInput1 = document.getElementById("myInput1")
-  myInput = document.getElementById("myInput")
+  myInput = document.getElementById("myInput");
   myInput.remove();
   myInput1.remove();
 
