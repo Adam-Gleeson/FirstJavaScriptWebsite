@@ -2,24 +2,16 @@ function drinkDrive()
 {
     garbageCollector();
 
-    document.getElementById("myDiv").style.color = "red"
-    document.getElementById("myDiv").style.fontSize = "200px"
-
-    document.getElementById("myImg").style.height = "100%"
-    document.getElementById("myImg").style.width = "100%"
-
+    document.getElementById("myDiv").style.cssText = "color: red;  font-size: 200px";
+    document.getElementById("myImg").style.cssText = "height: 100%;  width: 100%";
 }
 
 function betaLoser()
 {
     garbageCollector();
 
-    document.getElementById("myDiv2").style.color = "red"
-    document.getElementById("myDiv2").style.fontSize = "200px"
-
-    document.getElementById("myImg3").style.height = "100%"
-    document.getElementById("myImg3").style.width = "100%"
-
+    document.getElementById("myDiv2").style.cssText = "color: red;  font-size: 200px";
+    document.getElementById("myImg3").style.cssText = "height: 100%;  width: 100%";
 }
 
 
