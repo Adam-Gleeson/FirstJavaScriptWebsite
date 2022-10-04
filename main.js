@@ -1,69 +1,36 @@
-function changeAll()
+function drinkDrive()
 {
-    let myH1 = null;
-    let myDiv = null;
-    let myImg = null;
-    let myImg2 = null;
-    let myInput = null;
+    garbageCollector();
 
-    myH1 = document.getElementById("header")
+    document.getElementById("myDiv").style.color = "red"
+    document.getElementById("myDiv").style.fontSize = "200px"
 
-    myH1.style.color = "green"
-    myH1.style.fontSize = "0"
+    document.getElementById("myImg").style.height = "100%"
+    document.getElementById("myImg").style.width = "100%"
 
-    myDiv = document.getElementById("myDiv")
-
-    myDiv.style.color = "red"
-    myDiv.style.fontSize = "200px"
-
-  myImg = document.getElementById("myImg")
-
-  myImg.style.height = "100%"
-  myImg.style.width = "100%"
-
-  myImg2 = document.getElementById("myImg2")
-
-  myImg2.style.height = "0"
-  myImg2.style.width = "0"
-
-  myInput = document.getElementById("myInput")
-  myInput1 = document.getElementById("myInput1")
-  myInput.remove();
-  myInput1.remove();
-
-  myInput.style.fontSize = "0"
 }
-function changeIt()
+
+function betaLoser()
 {
-    let myH1 = null;
-    let myImg3 = null;
-    let myImg2 = null;
-    let myInput = null;
+    garbageCollector();
 
-    myH1 = document.getElementById("header")
+    document.getElementById("myDiv2").style.color = "red"
+    document.getElementById("myDiv2").style.fontSize = "200px"
 
-    myH1.style.color = "green"
-    myH1.style.fontSize = "0"
+    document.getElementById("myImg3").style.height = "100%"
+    document.getElementById("myImg3").style.width = "100%"
 
-    myDiv2 = document.getElementById("myDiv2")
+}
 
-    myDiv2.style.color = "red"
-    myDiv2.style.fontSize = "200px"
 
-  myImg3 = document.getElementById("myImg3")
+function garbageCollector()
+{
+  //Remove Header
+  document.getElementById("header").remove();
+  //Remove Keys
+  document.getElementById("myImg2").remove();
 
-  myImg3.style.height = "100%"
-  myImg3.style.width = "100%"
-
-  myImg2 = document.getElementById("myImg2")
-
-  myImg2.style.height = "0"
-  myImg2.style.width = "0"
-
-  myInput1 = document.getElementById("myInput1")
-  myInput = document.getElementById("myInput")
-  myInput.remove();
-  myInput1.remove();
-
-  myInput.style.fontSize = "0"
+  //Remove Buttons
+  document.getElementById("myInput").remove();
+  document.getElementById("myInput1").remove();
 }
