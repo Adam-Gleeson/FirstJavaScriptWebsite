@@ -8,6 +8,8 @@ function change(joeBiden, arabJoeBiden){
   {
     document.getElementById("Joe"+i).remove();
   } 
+  
+  document.getElementById("audio").play();
 }
 
 function selectOption(){
