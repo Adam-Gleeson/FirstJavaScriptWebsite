@@ -3,46 +3,54 @@
         <link rel="stylesheet" href="Styles/style.css">
         <script src="main.js"></script>
     </head>
+    <nav id="hamNav">
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger">&#9776;</label>
+            <div id="hamItems">
+                <a href="index.html">Home Page</a>
+                <a href="patchNotes.html">Developer Notes</a>
+            </div>
+    </nav>
     <header  id="Joe1"><h1>I sure love to drink drive</h1>
-<p>I sure love to drink and drive lemme grab these keys they are really calling out for me right now</p>
-    </header>
-    <body>
-<nav><ul>
-    <li><a href="index.html">Home</a></li>
-    <li> <a href="patchNotes.html">Patch Notes</a></li>
-</ul>
-</nav>  
-<section id="CarPic">
-    <h1>what car do you drive</h1>
-    <form name="car">
-        <select id="Car" onchange="selectOption()">
-            <option>Options</option>
-            <option value="1">Ford Focus</option>
-            <option value="2">Ford Fiesta </option>
-            <option value="3">Volkswagen Golf</option>
-            <option value="4">Volkswagen Polo</option>
-            <option value="5">Volkswagen Jetta</option>
-            <option value="6">Vauxhall</option>
-            <option value="7">Mini</option>
-            <option value="8">Nissan GTR</option>
-        </select>
-    </form>          
-        <img class="reduce" id="Joe2" src="Images/carKeys2" alt="CarKeys">
-        <div id="myDiv">
-            <p class="centered">OI</p>
-        <img  id="myImg" src="Images/WiseMysticalTree.jpg" alt="WiseMysticalTree">
-        </div>
-        <input id="Joe4" type="button" value="To get the keys just press this button" onclick="change(myDiv, myImg)">
-        <input id="Joe3" type="button" value="Nah im good I will not drink drive" onclick = "change(myDiv2, myImg3)">
-        <audio id="audio" src = "Skyrim Main Theme.mp3"></audio>  
+        <p>I sure love to drink and drive lemme grab these keys they are really calling out for me right now</p>
+            </header>
+            <body> 
+        <section id="CarPic">
+            <h1 id="Joe6">What car do you drive</h1>
+            <form name="car">
+                <select id="Joe5" onchange="selectOption()">
+                    <option value="0">Options</option>
+                    <option value="1">Ford Focus</option>
+                    <option value="2">Ford Fiesta </option>
+                    <option value="3">Volkswagen Golf</option>
+                    <option value="4">Volkswagen Polo</option>
+                    <option value="5">Volkswagen Jetta</option>
+                    <option value="6">Vauxhall</option>
+                    <option value="7">Mini</option>
+                    <option value="8">Nissan GTR</option>
+                </select>
+            </section>
+            </form>          
+            <audio id="audio1" src = "Audio/wise-mystical-tree-music-By-Tuna.mp3"></audio>
+            <audio loop id="audio2" src = "Audio/My_Name_is_Skyler_White_Yo.mp3"></audio>  
+        </section>  
+            <section id="Fat">
+            <img class="reduce" id="Joe2" src="Images/carKeys2" alt="CarKeys">
+            <input id="Joe4" type="button" value="To get the keys just press this button" onclick="change(myDiv, myImg); playAudio(1)">
+            <input id="Joe3" type="button" value="Nah im good I will not drink drive" onclick = "change(myDiv2, myImg3); playAudio(2)">
+        </section>
+            <div id="myDiv">
+                <p class="centered">OI</p>
+            <img id="myImg" src="Images/WiseMysticalTree.jpg" alt="WiseMysticalTree">
+            </div>
 
-        <div id="myDiv2">
-            <p class="centered">LMFAO what a loser</p>
-            <img  id="myImg3" src="Images/dominantMan.jpg" alt="Big man">
-        </div>
-    </section>
-    </body>
-    <footer>
-        &copy; 2022 Samson Software PLC
-    </footer>
+                <div id="myDiv2">
+                    <p class="centered">LMFAO what a loser</p>
+                    <img  id="myImg3" src="Images/dominantMan.jpg" alt="Big man">
+                </div>
+            </section>
+            </body>
+            <footer>
+                &copy; 2022 Samson Software PLC
+            </footer>
 </html>
