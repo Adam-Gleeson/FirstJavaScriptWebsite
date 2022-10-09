@@ -15,8 +15,22 @@
         <p>I sure love to drink and drive lemme grab these keys they are really calling out for me right now</p>
             </header>
             <body> 
-        <section id="CarPic">
-            <h1 id="Joe6">What car do you drive</h1>
+                <!--Chug Counter-->
+                <section id="Joe7">    
+                    <h1>Grab a drink or two</h1>
+                    <input type="button" id="Chug" value="Just a sip" onclick="chugJug();">
+                    <img style="height: 30%; width: 20%;" src="Images/drinker.jpeg" alt="Drinking">
+                    <div id="george">
+                        <p id="chugCounter">
+                        </p>
+                    </div>
+                </section>
+
+                <!--Car Choice-->
+        <section id="Joe6">
+            <h1>What car do you drive</h1>
+            <div id="CarPic">
+            </div>            
             <form name="car">
                 <select id="Joe5" onchange="selectOption()">
                     <option value="0">Options</option>
@@ -28,12 +42,16 @@
                     <option value="6">Vauxhall</option>
                     <option value="7">Mini</option>
                     <option value="8">Nissan GTR</option>
-                </select>
+                </select>            
             </section>
+             <!--Wise Mystical Tree-->
             </form>          
             <audio id="audio1" src = "Audio/wise-mystical-tree-music-By-Tuna.mp3"></audio>
             <audio loop id="audio2" src = "Audio/My_Name_is_Skyler_White_Yo.mp3"></audio>  
+            <audio id="chugNoise" src ="Audio/X2Download.app_-_Fortnite_Shield_Potion_Fortnite_Battle_Royale_-_Gaming_Sound_Effect_HD___Sound_Effects_320_kbps.mp3"></audio>
         </section>  
+
+        <!-- Getting Car Keys-->
             <section id="Fat">
             <img class="reduce" id="Joe2" src="Images/carKeys2" alt="CarKeys">
             <input id="Joe4" type="button" value="To get the keys just press this button" onclick="change(myDiv, myImg); playAudio(1)">
@@ -50,6 +68,7 @@
                 </div>
             </section>
             </body>
+
             <footer>
                 &copy; 2022 Samson Software PLC
             </footer>
